@@ -7,4 +7,4 @@
     eg: stepassessments2021/course_name/candidate_name/assessment_number/solution
 3) Code should follow the good coding practices and it should be readable and should not have any compile time errors.
 4) Plagarisim check will be done for each Solution, so please ensure that your code is plagarisim free.
-5) Finally, push your code to main branch.
+5) Finally, push your code to main  branch.
