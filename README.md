@@ -1,5 +1,7 @@
 # stepassessments2021
 
+## Accept your github collaboration invite which comes to your email which was associated with your personal github accounts ##
+
 # Assessment Instructions
 
 1) Create a console application for each question that has given. if there are multipile questions given, create multiple C# solutions for them.
