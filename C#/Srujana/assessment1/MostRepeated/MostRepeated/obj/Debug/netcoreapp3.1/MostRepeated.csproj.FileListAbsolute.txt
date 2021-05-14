@@ -1,0 +1,13 @@
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.csprojAssemblyReference.cache
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.AssemblyInfoInputs.cache
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.AssemblyInfo.cs
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.csproj.CoreCompileInputs.cache
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.exe
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.deps.json
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.runtimeconfig.json
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.runtimeconfig.dev.json
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.dll
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\bin\Debug\netcoreapp3.1\MostRepeated.pdb
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.dll
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.pdb
+C:\Users\saisr\source\repos\MostRepeated\MostRepeated\obj\Debug\netcoreapp3.1\MostRepeated.genruntimeconfig.cache
