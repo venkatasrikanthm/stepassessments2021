@@ -1,0 +1,13 @@
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.csprojAssemblyReference.cache
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.AssemblyInfoInputs.cache
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.AssemblyInfo.cs
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.csproj.CoreCompileInputs.cache
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.exe
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.deps.json
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.runtimeconfig.json
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.runtimeconfig.dev.json
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.dll
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\bin\Debug\netcoreapp3.1\ValidCovidVaccine.pdb
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.dll
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.pdb
+C:\Users\saisr\source\repos\ValidCovidVaccine\ValidCovidVaccine\obj\Debug\netcoreapp3.1\ValidCovidVaccine.genruntimeconfig.cache
