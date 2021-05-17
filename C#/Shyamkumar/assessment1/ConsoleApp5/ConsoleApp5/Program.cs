@@ -10,72 +10,59 @@ namespace asssessment1
     {
         public static string Encrypt(string input)
         {
-            string sample1 = "";
+            string sampleString = "";
             for (int i = input.Length - 1; i >= 0; i--)
             {
-                sample1 += input[i];
+                sampleString += input[i];
             }
-            sample1 = sample1.Replace("a", "0");
-            sample1 = sample1.Replace("e", "1");
-            sample1 = sample1.Replace("i", "2");
-            sample1 = sample1.Replace("o", "3");
-            sample1 = sample1.Replace("u", "4");
-            string encrypt = sample1 + "aca";
+            sampleString = sampleString.Replace("a", "0");
+            sampleString = sampleString.Replace("e", "1");
+            sampleString = sampleString.Replace("i", "2");
+            sampleString = sampleString.Replace("o", "3");
+            sampleString = sampleString.Replace("u", "4");
+            string encrypt = sampleString + "aca";
             return encrypt;
         }
         public static string Decrypt(string input)
         {
-            string sample1 = "";
+            string sampleString = "";
             for (int i = input.Length - 4; i >= 0; i--)
             {
-                sample1 += input[i];
+                sampleString += input[i];
             }
-            sample1 = sample1.Replace("0", "a");
-            sample1 = sample1.Replace("1", "e");
-            sample1 = sample1.Replace("2", "i");
-            sample1 = sample1.Replace("3", "o");
-            sample1 = sample1.Replace("4", "u");
-            return sample1;
+            sampleString = sampleString.Replace("0", "a");
+            sampleString = sampleString.Replace("1", "e");
+            sampleString = sampleString.Replace("2", "i");
+            sampleString = sampleString.Replace("3", "o");
+            sampleString = sampleString.Replace("4", "u");
+            return sampleString;
         }
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
-            int real = 1;
-            while (real == 1)
+            Console.WriteLine("enter encrypt or decrypt:");
+            string input = Console.ReadLine();
+            if (input == "encrypt")
             {
-                Console.WriteLine("enter encrypt or decrypt or exit:");
-
-                string encrypt = Console.ReadLine();
-                if (encrypt == "exit")
-                {
-                    real = 0;
-                    return real;
-                }
-                else if (encrypt == "encrypt" || encrypt == "decrypt")
-                {
-                    Console.WriteLine("enter text:");
-                    string str = Console.ReadLine();
-
-                    switch (encrypt)
-                    {
-                        case "encrypt":
-                            string str1 = Encrypt(str);
-                            Console.WriteLine("encrypted:" + str1);
-                                                        break;
-                        case "decrypt":
-                            string str2 = Decrypt(str);
-                            Console.WriteLine("decrypted original text:" + str2);
-                            break;
-                        case "exit":
-                            real = 0;
-                            return real;
-                        default:
-                            Console.WriteLine("enter encrypt or decrypt or exit:");
-                            break;
-                    }
-                }
+                Console.WriteLine("enter text:");
+                string samplestring = Console.ReadLine();
+                string samplestring1 = Encrypt(samplestring);
+                Console.WriteLine("encrpted:" + samplestring1);
             }
-                       return 0;
+            else if (input == "decrypt")
+            {
+                Console.WriteLine("enter text:");
+                string samplestring = Console.ReadLine();
+                string samplestring2 = Decrypt(samplestring);
+                Console.WriteLine("decrypted original text:" + samplestring2);
+            }
+           else
+            {
+                Console.WriteLine("invalid text:");
+            }
+            Console.WriteLine(" enter any key to exit:");
+            Console.ReadLine();
         }
+        
     }
-
 }
+
