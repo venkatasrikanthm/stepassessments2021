@@ -5,72 +5,69 @@ namespace ConsoleApp1
 {
     class Program
     {
-        private const string V = "aca";
+
 
         static void Main(string[] args)
         {
 
             Console.WriteLine("Enter encrypt or decrypt");
             string value = Console.ReadLine();
-            Console.WriteLine("Enter input string");
-            string str = Console.ReadLine();
-            if (value == "encrypt")
-            {
-                string res = Encrypt(str);
-                Console.WriteLine($"Encrypted value:{res}aca");
+            string val=value.ToLower();
+            //int i = Convert.ToInt32(Console.ReadLine());
+                switch (val)
+                {
+                    case "encrypt":
+                        Console.WriteLine("Enter input text");
+                        string str = Console.ReadLine();
+                        string res = Encrypt(str);
+                        Console.WriteLine($"Encrypted value:{res}aca");
+                        break;
+                    case "decrypt":
+                        Console.WriteLine("Enter input text");
+                        string str1 = Console.ReadLine();
+                        string result = Decrypt(str1);
+                        Console.WriteLine($"Decrepted value:{result}");
+                        break;
 
-            }
-            else if (value == "decrypt")
-            {
-                string res = Encrypt(str);
-                Console.WriteLine($"Encrypted value:{res}aca");
-                string result = Decrypt(Encrypt(str));
-                Console.WriteLine($"Decrepted value:{result}");
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
 
-            }
-            else
-                Console.WriteLine("Invalid choice");
-
-
+                }
+            Console.WriteLine("Enter any key to exit");
+            Console.ReadKey();
         }
 
         public static string Encrypt(string str)
         {
+            
             string strval = "";
             for (int i = str.Length - 1; i >= 0; i--)
             {
                 strval = strval + str[i];
             }
-            if (strval.Contains('a'))
-                strval=strval.Replace('a', '1');
-            if (strval.Contains('e'))
-                strval=strval.Replace('e', '2');
-            if (strval.Contains('i'))
-                strval=strval.Replace('i', '3');
-            if (strval.Contains('o'))
-                strval=strval.Replace('o', '4');
-            if (strval.Contains('u'))
-                strval=strval.Replace('u', '5');
+            
+            strval=strval.Replace('a', '0');
+            strval=strval.Replace('e', '1');
+            strval=strval.Replace('i', '2');
+            strval=strval.Replace('o', '3');
+            strval=strval.Replace('u', '4');
             return strval;
           
         }
         public static string Decrypt(string res)
         {
             string strval = "";
-            for (int i = res.Length - 1; i >= 0; i--)
+            for (int i = 0; i <= res.Length - 1; i++) 
             {
                 strval = strval + res[i];
             }
-            if (strval.Contains('1'))
-                strval = strval.Replace('1', 'a');
-            if (strval.Contains('2'))
-                strval = strval.Replace('2', 'e');
-            if (strval.Contains('3'))
-                strval = strval.Replace('3', 'i');
-            if (strval.Contains('4'))
-                strval = strval.Replace('4', 'o');
-            if (strval.Contains('5'))
-                strval = strval.Replace('5', 'u');
+            
+            strval = strval.Replace('0', 'a');
+            strval = strval.Replace('1', 'e');
+            strval = strval.Replace('2', 'i');
+            strval = strval.Replace('3', 'o');
+            strval = strval.Replace('4', 'u');
             return strval;
         }
     }

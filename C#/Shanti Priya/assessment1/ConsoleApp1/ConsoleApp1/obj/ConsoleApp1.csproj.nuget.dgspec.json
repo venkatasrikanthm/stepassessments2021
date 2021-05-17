@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\santhi\\Desktop\\stepapicsharptraning-SanthiPriya\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\santhi\\Desktop\\stepassessments2021\\C#\\Shanti Priya\\assessment1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\santhi\\Desktop\\stepapicsharptraning-SanthiPriya\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\santhi\\Desktop\\stepassessments2021\\C#\\Shanti Priya\\assessment1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\santhi\\Desktop\\stepapicsharptraning-SanthiPriya\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\santhi\\Desktop\\stepassessments2021\\C#\\Shanti Priya\\assessment1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\santhi\\Desktop\\stepapicsharptraning-SanthiPriya\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\santhi\\Desktop\\stepassessments2021\\C#\\Shanti Priya\\assessment1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\santhi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\santhi\\Desktop\\stepapicsharptraning-SanthiPriya\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\santhi\\Desktop\\stepassessments2021\\C#\\Shanti Priya\\assessment1\\ConsoleApp1\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santhi\\AppData\\Roaming\\NuGet\\NuGet.Config",

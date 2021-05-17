@@ -15,7 +15,7 @@ namespace ConsoleApp2
                 Console.WriteLine("Enter 4 digit Pin Number");
                 try
                 {
-                     int pin = int.Parse(Console.ReadLine());
+                int pin = int.Parse(Console.ReadLine());
                 
                 if (pin == pin_num)
                 {
@@ -72,17 +72,38 @@ namespace ConsoleApp2
                     case 5:
                         Console.WriteLine("Thank you");
                         break;
+                   default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+
+                    
                 }
             
 
 
             Console.WriteLine("Do u want another transaction");
             string res = Console.ReadLine();
-            if (res == "yes")
-                checkpin();
-            else
-                Console.WriteLine("Thank you for using ATM service");
+            string res1 = res.ToLower();
+            
+                if (res1 == "yes")
+                    checkpin();
+                else if(res1!="yes")
+                {
+                Console.WriteLine("we are validating you.Kindly wait");
+                for (int i = 0; i < 500; i++)
+                    System.Threading.Thread.Sleep(10);
+
+                Console.WriteLine("Your transaction has been cancelled.");
+                
+                }       
+                
+            
+                
+            Console.WriteLine("enter any key to exit");
+            Console.ReadLine();
+
         }
+
 
         public static void CheckBalance()
         {
@@ -133,43 +154,26 @@ namespace ConsoleApp2
                 Console.WriteLine("Amount must be in digits");
             }
         }
-
-            /*else
-            {
-
-                for (int i = 0; i < 3; i++)
-                {
-                    Console.WriteLine("You have entered the wrong pin.Try again:");
-                    pin = Convert.ToInt32(Console.ReadLine());
-                    if (pin == pin_num)
-                    {
-                        Console.WriteLine("Enter your 4 digit Pin Number");
-                         pin = Convert.ToInt32(Console.ReadLine());
-                        if (pin == pin_num)
-                        {
-                            Console.WriteLine("Enter the deposit money");
-                            int deposit = int.Parse(Console.ReadLine());
-                            Amount = Amount + deposit;
-                            Console.WriteLine("Your amount has been deposited successfully.");
-                            Console.WriteLine("Your total balance is {0}", Amount);
-                        }
-                    }
-                }
-                Console.WriteLine("Your Account is Blocked");
-
-            }
-        }*/
         public static void ChangePin()
         {
-           
-                    Console.WriteLine("Enter New pin");
-                    int newpin = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Renter  pin");
-                    int newpin1 = Convert.ToInt32(Console.ReadLine());
-                    if (newpin == newpin1)
-                        Console.WriteLine("Your pin changes Successfully");
-                    else
-                        Console.WriteLine("Your re-entered pin doesn't match");
+                    Console.WriteLine("Enter Your 4 digit pin");
+                    int pin= Convert.ToInt32(Console.ReadLine());
+            if (pin == pin_num)
+            {
+                Console.WriteLine("Enter New pin");
+                int newpin = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Renter  pin");
+                int newpin1 = Convert.ToInt32(Console.ReadLine());
+                if (newpin == newpin1)
+                {
+                    Console.WriteLine("Your pin changes Successfully");
+                    pin_num = newpin;
+                }
+                else
+                    Console.WriteLine("Your re-entered pin doesn't match");
+            }
+            else
+                Console.WriteLine("Your entered pin is incorrect");
         }            
     }
  }
