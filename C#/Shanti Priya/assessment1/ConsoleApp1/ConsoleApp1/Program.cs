@@ -23,7 +23,7 @@ namespace ConsoleApp1
                         Console.WriteLine($"Encrypted value:{res}aca");
                         break;
                     case "decrypt":
-                        Console.WriteLine("Enter input text");
+                        Console.WriteLine("Enter encrypted text as input");
                         string str1 = Console.ReadLine();
                         string result = Decrypt(str1);
                         Console.WriteLine($"Decrepted value:{result}");
@@ -55,12 +55,12 @@ namespace ConsoleApp1
             return strval;
           
         }
-        public static string Decrypt(string res)
+        public static string Decrypt(string str)
         {
             string strval = "";
-            for (int i = 0; i <= res.Length - 1; i++) 
+            for (int i = str.Length-1; i >=0 ; i--) 
             {
-                strval = strval + res[i];
+                strval = strval + str[i];
             }
             
             strval = strval.Replace('0', 'a');
