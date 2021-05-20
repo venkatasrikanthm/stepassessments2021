@@ -26,7 +26,8 @@ namespace ConsoleApp1
                         Console.WriteLine("Enter encrypted text as input");
                         string str1 = Console.ReadLine();
                         string result = Decrypt(str1);
-                        Console.WriteLine($"Decrepted value:{result}");
+                        string str2 = result.Substring(3);
+                        Console.WriteLine($"Decrepted value:{str2}");
                         break;
 
                     default:
@@ -36,6 +37,7 @@ namespace ConsoleApp1
                 }
             Console.WriteLine("Enter any key to exit");
             Console.ReadKey();
+        
         }
 
         public static string Encrypt(string str)
