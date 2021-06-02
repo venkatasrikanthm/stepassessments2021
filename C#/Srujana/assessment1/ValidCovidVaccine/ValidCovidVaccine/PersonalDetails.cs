@@ -9,54 +9,59 @@ namespace ValidCovidVaccine
         int _age;
         string _gender;
 
-        public PersonalDetails(string Name,string Aadharnum,int Age, string Gender)
+
+        public PersonalDetails(string Name, string Aadharnum, int Age, string Gender)
         {
-            this._name=Name;
-            this._aadharnum=Aadharnum;
-            this._age=Age;
+            this._name = Name;
+            this._aadharnum = Aadharnum;
+            this._age = Age;
             this._gender = Gender;
+
         }
 
-        public void Eligible(string Name, string Aadharnum, int Age, string Gender)
+        public void Eligible(string Name, string Aadharnum, int Age, string Gender, string pregnant)
         {
-            if (Gender == "female")
+
+            if (Age < 18)
             {
-                Console.WriteLine("Are You Pregnant yes or no?");
-                string pregnant = Console.ReadLine();
-                if (pregnant == "yes")
+                Console.WriteLine("{0} is not eligible for vaccine", Name);
+            }
+            else if (Age >= 18 && Age <= 45)
+            {
+                if (Gender.ToLower() == "female")
                 {
-                    if (Age >= 30 && Age <= 40)
+
+                    if (pregnant.ToLower() == "yes")
                     {
-                        Console.WriteLine("{0} is eligible for Covaxin", Name);
+                        if (Age >= 30 && Age <= 40)
+                        {
+                            Console.WriteLine("{0} is eligible for Covaxin", Name);
+                        }
+                        else
+                        {
+                            Console.WriteLine("{0} is not eligible for vaccine", Name);
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("{0} is not eligible for vaccine", Name);
+                        Console.WriteLine("{0} is eligible for CoviShield", Name);
                     }
                 }
                 else
                 {
-                    goto ageCheck;
+                    Console.WriteLine("{0} is eligible for CoviShield", Name);
                 }
+            }
+            else if (Age > 45 && Gender.ToLower() == "female" && pregnant.ToLower() == "yes")
+            {
+                Console.WriteLine("{0} is not eligible for vaccine", Name);
             }
             else
             {
-                goto ageCheck;
+                Console.WriteLine("{0} is eligible for Covaxin", Name);
             }
-            ageCheck:
 
-                if (Age < 18)
-                {
-                    Console.WriteLine("{0} is not eligible for vaccine", Name);
-                }
-                else if (Age >= 18 && Age <= 45)
-                {
-                    Console.WriteLine("{0} is eligible for Covi Shield", Name);
-                }
-                else
-                {
-                    Console.WriteLine("{0} is eligible for Covaxin ", Name);
-                }
+
         }
     }
 }
