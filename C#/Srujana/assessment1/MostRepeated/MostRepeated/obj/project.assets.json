@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saisr\\source\\repos\\MostRepeated\\MostRepeated\\MostRepeated.csproj",
+      "projectUniqueName": "C:\\Users\\saisr\\Desktop\\Git Repos\\stepassessments2021\\C#\\Srujana\\assessment1\\MostRepeated\\MostRepeated\\MostRepeated.csproj",
       "projectName": "MostRepeated",
-      "projectPath": "C:\\Users\\saisr\\source\\repos\\MostRepeated\\MostRepeated\\MostRepeated.csproj",
+      "projectPath": "C:\\Users\\saisr\\Desktop\\Git Repos\\stepassessments2021\\C#\\Srujana\\assessment1\\MostRepeated\\MostRepeated\\MostRepeated.csproj",
       "packagesPath": "C:\\Users\\saisr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saisr\\source\\repos\\MostRepeated\\MostRepeated\\obj\\",
+      "outputPath": "C:\\Users\\saisr\\Desktop\\Git Repos\\stepassessments2021\\C#\\Srujana\\assessment1\\MostRepeated\\MostRepeated\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saisr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

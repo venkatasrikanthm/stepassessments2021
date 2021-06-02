@@ -9,54 +9,65 @@ namespace MostRepeated
         {
             string[] StrArray = new string[10];
             Dictionary<string, int> WordCount = new Dictionary<string, int>();
+            List<string> FrequentWords = new List<string>();
 
-            int i;
-            Console.WriteLine("Enter the lenght of the array: ");
+            int index;
+            Console.Write("Enter the length of the array: ");
             int length = int.Parse(Console.ReadLine());
 
             //Reading Array of String
 
-            for (i = 0; i < length; i++)
+            for (index = 0; index < length; index++)
             {
-                StrArray[i]=Console.ReadLine();
+                Console.Write("Enter the string {0} : ", index + 1);
+                StrArray[index] = Console.ReadLine();
 
             }
 
             // Counting the frquencies of string 
 
-            for (i = 0; i < length; i++)
+            for (index = 0; index < length; index++)
             {
-                if (WordCount.ContainsKey(StrArray[i]))
+                if (WordCount.ContainsKey(StrArray[index]))
                 {
-                    WordCount[StrArray[i]] += 1;
+                    WordCount[StrArray[index]] += 1;
                 }
                 else
                 {
-                    WordCount.Add(StrArray[i],1);
+                    WordCount.Add(StrArray[index], 1);
                 }
             }
-            
+
             // printing the word and its respective count
 
-            foreach(KeyValuePair<string,int> WordCountPair in WordCount)
+            foreach (KeyValuePair<string, int> WordCountPair in WordCount)
             {
-                Console.WriteLine("{0}:{1}", WordCountPair.Key, WordCountPair.Value);
+                Console.Write("{0}:{1} ", WordCountPair.Key, WordCountPair.Value);
             }
 
-            //Highest Frequency
+            //Highest Frequency words
 
-            String Word = "";
             int count = 0;
-            foreach(KeyValuePair<string, int> keyValue in WordCount)
+            foreach (KeyValuePair<string, int> keyValue in WordCount)
             {
                 if (count < keyValue.Value)
                 {
                     count = keyValue.Value;
-                    Word = keyValue.Key;
                 }
+                if (keyValue.Value == count)
+                {
+
+                    FrequentWords.Add(keyValue.Key);
+                }
+
             }
-            
-            Console.WriteLine("Most Frequent Word = {0} {1}" ,Word,count);
+            Console.Write("\nMost Frequent Word(s): ");
+            foreach (var ele in FrequentWords)
+            {
+                Console.Write(ele + " ");
+            }
+
+
         }
     }
 }
