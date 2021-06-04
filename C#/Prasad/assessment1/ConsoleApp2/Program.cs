@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     class Program
     {
-        static int globalItemValue;
+        //static int globalItemValue;
         static List<int> values = new List<int>();
         static int globalId;
         static int globalItemName;
