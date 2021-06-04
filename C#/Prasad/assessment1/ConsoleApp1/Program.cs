@@ -112,6 +112,5 @@ namespace ConsoleApp1
             RemoveDuplicates(uList);
             Sort(uList);
         }
-
     }
 }
